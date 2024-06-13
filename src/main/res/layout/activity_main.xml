@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@drawable/gradientbackground">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_navigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+    <ImageView
+        android:id="@+id/hands"
+        android:layout_width="412dp"
+        android:layout_height="361dp"
+        android:src="@drawable/sketch"
+        tools:layout_editor_absoluteX="-1dp"
+        tools:layout_editor_absoluteY="-59dp" />
+
+    <ImageView
+        android:id="@+id/smile"
+        android:layout_width="113dp"
+        android:layout_height="115dp"
+        android:src="@drawable/smile"
+        tools:layout_editor_absoluteX="149dp"
+        tools:layout_editor_absoluteY="272dp" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="252dp"
+        android:layout_height="47dp"
+        android:textStyle="bold"
+        android:background="@drawable/buttonshape"
+        android:text="Ayo belajar bahasa isyarat!"
+        tools:layout_editor_absoluteX="79dp"
+        tools:layout_editor_absoluteY="421dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
